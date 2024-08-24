@@ -10,4 +10,4 @@ src-git telephony https://github.com/openwrt/telephony.git
 #src-git modemfeed https://github.com/koshev-msk/modemfeed.git
 #src-git kenzo https://github.com/kenzok8/openwrt-packages
 #src-git small https://github.com/kenzok8/small
-src-git modem https://github.com/kiddin9/openwrt-packages.git
+#src-git modem https://github.com/kiddin9/openwrt-packages.git
