@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/luci-app-pgyvpn/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-pgyvpn
+Submenu: 3. Applications
+Version: x
+Depends: +libc +lua-md5 +pgyvpn +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for the PuGongYing VPN
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: LuCI Support for the PuGongYing VPN
+@@
+
+

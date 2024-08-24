@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-sakurafrp/Makefile
+
+Package: luci-app-sakurafrp
+Submenu: 3. Applications
+Version: 1.0.0-r1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Luci Support for SakuraFrp
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	This package contains LuCI Support and administration for SakuraFrp
+@@
+
+

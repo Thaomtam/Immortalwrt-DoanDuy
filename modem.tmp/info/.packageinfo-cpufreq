@@ -1,0 +1,19 @@
+Source-Makefile: feeds/modem/cpufreq/Makefile
+
+Package: cpufreq
+Version: 4
+Depends: +libc @(arm||aarch64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: base
+Title: CPU Frequency Scaling adjustment tool
+Maintainer: 
+Source: 
+Type: ipkg
+Description: CPU Frequency Scaling adjustment tool
+@@
+
+

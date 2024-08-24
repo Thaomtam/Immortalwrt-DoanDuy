@@ -1,0 +1,19 @@
+Source-Makefile: feeds/modem/fm350-modem/Makefile
+
+Package: fm350-modem
+Version: 0.0.2-r6
+Depends: +libc +comgt +kmod-usb-acm +kmod-usb-serial-option +kmod-usb-net-rndis
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: base
+Title: Fibocom FM350 protocol
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Simple connect to cellular for Fibocom FM350 module
+@@
+
+

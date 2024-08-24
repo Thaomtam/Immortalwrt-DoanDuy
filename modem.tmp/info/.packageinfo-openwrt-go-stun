@@ -1,0 +1,25 @@
+Source-Makefile: feeds/modem/openwrt-go-stun/Makefile
+Build-Depends: golang/host
+
+Package: go-stun
+Version: 0.1.4-r1
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A GO implementation of the STUN client
+Maintainer: muink <hukk1996@gmail.com>
+Source: go-stun-0.1.4-d32c135f5e509d278e95ba9945849903f966a91f.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+URL: https://github.com/ccding/go-stun
+Type: ipkg
+Description:   go-stun is a STUN (RFC 3489, 5389) client implementation in golang (a.k.a. UDP hole punching).
+  RFC 3489: STUN - Simple Traversal of User Datagram Protocol (UDP) Through Network Address Translators (NATs)
+  RFC 5389: Session Traversal Utilities for NAT (STUN)
+@@
+
+

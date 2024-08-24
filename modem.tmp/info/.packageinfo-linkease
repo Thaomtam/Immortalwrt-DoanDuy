@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/linkease/Makefile
+
+Package: linkease
+Submenu: Web Servers/Proxies
+Version: 1.6.5-r59
+Depends: +libc @(arm||x86_64||aarch64) +ffmpeg-remux +linkmount
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: LinkEase - the file cloud
+Maintainer: 
+Source: linkease-binary-1.6.5.tar.gz
+URL: https://www.linkease.com/
+Type: ipkg
+Description:   LinkEase is a file cloud
+@@
+
+

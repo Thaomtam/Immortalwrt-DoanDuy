@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/luci-app-miniproxy/Makefile
+
+Package: luci-app-miniproxy
+Version: 4.2-r1
+Depends: +libc +luci-base +ip-full +PACKAGE_firewall4:kmod-nft-tproxy +PACKAGE_firewall:ipset +PACKAGE_firewall:kmod-ipt-tproxy +PACKAGE_firewall:iptables +PACKAGE_firewall:iptables-mod-tproxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Custom
+Category: Extra packages
+Repository: base
+Title: Easy set transparent proxy for openwrt.
+Maintainer: Mitsuha <i@mitsuha.me>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	Easy set transparent proxy for openwrt.
+@@
+
+

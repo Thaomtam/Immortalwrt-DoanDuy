@@ -1,0 +1,55 @@
+Source-Makefile: feeds/modem/eqos-master-wiwiz/Makefile
+
+Package: eqos
+Submenu: Portal
+Version: 7
+Depends: +libc +tc +kmod-sched-core +kmod-ifb
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Wiwiz/PinPinWiFi
+Repository: base
+Title: Easy QoS(Support speed limit based on IP address)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Easy QoS(Support speed limit based on IP address)
+@@
+
+Package: luci-app-eqos
+Submenu: Portal
+Version: 7
+Depends: +libc +luci-base +eqos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: Wiwiz/PinPinWiFi
+Repository: base
+Title: EQOS - LuCI interface
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Luci interface for the eqos.
+@@
+
+Package: luci-i18n-eqos-zh-cn
+Default: LUCI_LANG_zh-cn
+Version: 7
+Depends: +libc luci-app-eqos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: Wiwiz/PinPinWiFi
+Repository: base
+Title: luci-app-eqos - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description: luci-app-eqos - zh-cn translation
+@@
+
+

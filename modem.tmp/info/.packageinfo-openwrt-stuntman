@@ -1,0 +1,80 @@
+Source-Makefile: feeds/modem/openwrt-stuntman/Makefile
+Build-Depends: boost/host
+
+Package: stuntman-client
+Version: 1.2.17-r2
+Depends: +libc +libpthread +libstdcpp +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: An open source STUN server and client code by john selbie. Compliant with the latest RFCs including 5389, 5769, and 5780. Also includes backwards compatibility for RFC 3489.
+Maintainer: muink <hukk1996@gmail.com>
+Source: stuntman-cc5b875b3ac34b08b831ce34463b3474d412ac98.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+URL: https://github.com/jselbie/stunserver
+Type: ipkg
+Description:   An open source STUN server and client code by john selbie. Compliant with the latest RFCs including 5389, 5769, and 5780. Also includes backwards compatibility for RFC 3489.
+@@
+
+Package: stuntman-testcode
+Version: 1.2.17-r2
+Depends: +libc +libpthread +libstdcpp +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: An open source STUN server and client code by john selbie. Compliant with the latest RFCs including 5389, 5769, and 5780. Also includes backwards compatibility for RFC 3489.
+Maintainer: muink <hukk1996@gmail.com>
+Source: stuntman-cc5b875b3ac34b08b831ce34463b3474d412ac98.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+URL: https://github.com/jselbie/stunserver
+Type: ipkg
+Description:   An open source STUN server and client code by john selbie. Compliant with the latest RFCs including 5389, 5769, and 5780. Also includes backwards compatibility for RFC 3489.
+@@
+
+Package: stuntman-server
+Version: 1.2.17-r2
+Depends: +libc +libpthread +libstdcpp +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: An open source STUN server and client code by john selbie. Compliant with the latest RFCs including 5389, 5769, and 5780. Also includes backwards compatibility for RFC 3489.
+Maintainer: muink <hukk1996@gmail.com>
+Source: stuntman-cc5b875b3ac34b08b831ce34463b3474d412ac98.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+URL: https://github.com/jselbie/stunserver
+Type: ipkg
+Description:   An open source STUN server and client code by john selbie. Compliant with the latest RFCs including 5389, 5769, and 5780. Also includes backwards compatibility for RFC 3489.
+@@
+
+Package: stuntman
+Version: 1.2.17-r2
+Depends: +libc +libpthread +libstdcpp +libopenssl +stuntman-client +stuntman-server +stuntman-testcode
+Conflicts: 
+Menu-Depends: 
+Provides: stuntman
+Section: net
+Category: Network
+Repository: base
+Title: An open source STUN server and client code by john selbie. Compliant with the latest RFCs including 5389, 5769, and 5780. Also includes backwards compatibility for RFC 3489.
+Maintainer: muink <hukk1996@gmail.com>
+Source: stuntman-cc5b875b3ac34b08b831ce34463b3474d412ac98.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+URL: https://github.com/jselbie/stunserver
+Type: ipkg
+Description:   An open source STUN server and client code by john selbie. Compliant with the latest RFCs including 5389, 5769, and 5780. Also includes backwards compatibility for RFC 3489.
+@@
+
+

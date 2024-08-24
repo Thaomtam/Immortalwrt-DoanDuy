@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-xclient/Makefile
+
+Package: luci-app-xclient
+Submenu: 2. XClient
+Version: v2.1-r5
+Depends: +libc +coreutils +coreutils-base64 +pdnsd-alt +coreutils-nohup +curl +dnsmasq-full +luci-compat +dns2socks +ipset +ip-full +iptables-mod-tproxy +libuci-lua +lua +luci-lib-jsonc +microsocks +tcping +resolveip +shadowsocks-libev-ss-local +shadowsocks-libev-ss-redir +unzip +uclient-fetch +wget-ssl +libmbedtls
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for Xray
+Maintainer: xcode75
+Source: 
+Type: ipkg
+Description: LuCI Support for Xray
+@@
+
+

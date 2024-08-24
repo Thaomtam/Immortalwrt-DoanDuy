@@ -1,0 +1,42 @@
+Source-Makefile: feeds/modem/luci-app-cellularstatus/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-cellularstatus
+Submenu: 3. Applications
+Version: x
+Depends: +libc +uqmi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Cellular Network Dashboard
+Maintainer: OpenWrt LuCI community
+Source: 
+License: GPLv3
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: Cellular Network Dashboard
+@@
+
+Package: luci-i18n-cellularstatus-ja
+Default: LUCI_LANG_ja||(ALL&&m)
+Version: x
+Depends: +libc luci-app-cellularstatus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-cellularstatus - ja translation
+Maintainer: 
+Source: 
+License: GPLv3
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cellularstatus - 日本語 (Japanese)
+@@
+
+

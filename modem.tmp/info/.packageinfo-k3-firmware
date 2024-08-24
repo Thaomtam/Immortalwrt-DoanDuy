@@ -1,0 +1,19 @@
+Source-Makefile: feeds/modem/k3-firmware/Makefile
+
+Package: k3wifi
+Version: 1-r1
+Depends: +libc @TARGET_bcm53xx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: base
+Title: k3 wifi fw
+Maintainer: 
+Source: 
+Type: ipkg
+Description: k3 wifi fw
+@@
+
+

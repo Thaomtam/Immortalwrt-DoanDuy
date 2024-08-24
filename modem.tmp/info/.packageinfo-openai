@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/openai/Makefile
+
+Package: openai
+Submenu: Web Servers/Proxies
+Version: 2.8.9-96f3ca1-r1
+Depends: +libc @(aarch64||x86_64) +USE_GLIBC:libpthread +USE_GLIBC:libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: ChatGPT WebUI
+Maintainer: sbwml <admin@cooluc.com>
+Source: openai-v2.8.9-96f3ca1-linux-glibc-.tar.gz
+URL: https://github.com/Yidadaa/ChatGPT-Next-Web
+Type: ipkg
+Description:   Next.js based ChatGPT Web UI.
+@@
+
+

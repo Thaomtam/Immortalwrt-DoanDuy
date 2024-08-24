@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/openwrt-dogcom/Makefile
+
+Package: dogcom
+Version: v1.6.2-r3
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: dogcom for OpenWRT
+Maintainer: fuyumi <280604399@qq.com>
+Source: dogcom.tar.gz
+License: AGPL-3.0
+LicenseFiles: LICENSE
+URL: https://github.com/mchome/dogcom
+Type: ipkg
+Description: 	dogcom is drcom-generic implementation in C.
+@@
+
+

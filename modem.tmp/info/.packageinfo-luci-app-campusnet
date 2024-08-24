@@ -1,0 +1,42 @@
+Source-Makefile: feeds/modem/luci-app-campusnet/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-campusnet
+Submenu: 3. Applications
+Version: x
+Depends: +libc +python3 +python3-requests +curl +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI app for UJN China-Unicom certification
+Maintainer: OpenWrt LuCI community
+Source: 
+License: GPL-3.0
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: LuCI app for UJN China-Unicom certification
+@@
+
+Package: luci-i18n-campusnet-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-campusnet
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-campusnet - zh-cn translation
+Maintainer: nicholas9698 <nicholas9698@outlook.com>
+Source: 
+License: GPL-3.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-campusnet - 简体中文 (Chinese Simplified)
+@@
+
+

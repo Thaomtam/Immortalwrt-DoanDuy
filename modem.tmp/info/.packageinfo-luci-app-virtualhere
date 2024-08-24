@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-virtualhere/Makefile
+
+Package: luci-app-virtualhere
+Submenu: 3. Applications
+Version: 1.0-r1
+Depends: +libc @(i386||x86_64||arm||aarch64||mipsel)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: VirtualHere USB Service for LuCI
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     This package contains LuCI configuration pages for VirtualHere USB Service.
+@@
+
+

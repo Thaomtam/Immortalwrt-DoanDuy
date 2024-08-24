@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/luci-app-gpioled/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-gpioled
+Submenu: 3. Applications
+Version: x
+Depends: +libc +coreutils-sleep +screen +bash +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for GPIO LED
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description:    LuCI support for GPIO LED Configuration
+@@
+
+

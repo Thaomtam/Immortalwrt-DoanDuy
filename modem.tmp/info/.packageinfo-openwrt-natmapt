@@ -1,0 +1,112 @@
+Source-Makefile: feeds/modem/openwrt-natmapt/Makefile
+
+Package: natmapt
+Version: 20240813-r9
+Depends: +libc +curl +jsonfilter +bash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: TCP/UDP port mapping tool for full cone NAT
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>, Ray Wang <r@hev.cc>
+Source: natmap-20240813.tar.gz
+License: MIT
+LicenseFiles: License
+URL: https://github.com/heiher/natmap
+Type: ipkg
+Description: TCP/UDP port mapping tool for full cone NAT
+@@
+
+Package: natmapt-client-script-transmission
+Version: 20240603
+Depends: +libc +natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: natmapt-client-scripts
+Section: net
+Category: Network
+Repository: base
+Title: NATMap client scripts (Transmission)
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>, Ray Wang <r@hev.cc>
+Source: natmap-20240813.tar.gz
+License: MIT
+LicenseFiles: License
+Type: ipkg
+Description: NATMap client scripts (Transmission)
+@@
+
+Package: natmapt-client-script-deluge
+Version: 20240603
+Depends: +libc +natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: natmapt-client-scripts
+Section: net
+Category: Network
+Repository: base
+Title: NATMap client scripts (Deluge)
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>, Ray Wang <r@hev.cc>
+Source: natmap-20240813.tar.gz
+License: MIT
+LicenseFiles: License
+Type: ipkg
+Description: NATMap client scripts (Deluge)
+@@
+
+Package: natmapt-notify-script-pushbullet
+Version: 20240603
+Depends: +libc +natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: natmapt-notify-scripts
+Section: net
+Category: Network
+Repository: base
+Title: NATMap notify scripts (Pushbullet)
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>, Ray Wang <r@hev.cc>
+Source: natmap-20240813.tar.gz
+License: MIT
+LicenseFiles: License
+Type: ipkg
+Description: NATMap notify scripts (Pushbullet)
+@@
+
+Package: natmapt-notify-script-pushover
+Version: 20240603
+Depends: +libc +natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: natmapt-notify-scripts
+Section: net
+Category: Network
+Repository: base
+Title: NATMap notify scripts (Pushover)
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>, Ray Wang <r@hev.cc>
+Source: natmap-20240813.tar.gz
+License: MIT
+LicenseFiles: License
+Type: ipkg
+Description: NATMap notify scripts (Pushover)
+@@
+
+Package: natmapt-notify-script-telegram
+Version: 20240603
+Depends: +libc +natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: natmapt-notify-scripts
+Section: net
+Category: Network
+Repository: base
+Title: NATMap notify scripts (Telegram)
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>, Ray Wang <r@hev.cc>
+Source: natmap-20240813.tar.gz
+License: MIT
+LicenseFiles: License
+Type: ipkg
+Description: NATMap notify scripts (Telegram)
+@@
+
+

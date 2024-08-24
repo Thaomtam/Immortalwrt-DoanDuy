@@ -1,0 +1,23 @@
+Source-Makefile: feeds/modem/luci-app-droidnet/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-droidnet
+Submenu: 3. Applications
+Version: x
+Depends: +libc +adb +curl +screen
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for DroidNet
+Maintainer: OpenWrt LuCI community
+Source: 
+License: Apache-2.0
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description:    Manage Android modem and optimize network settings.
+@@
+
+

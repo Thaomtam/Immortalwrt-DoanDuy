@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/pikpak-webdav/Makefile
+
+Package: pikpak-webdav
+Version: 0.0.3-r6
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: base
+Title: WebDAV server for Pikpak
+Maintainer: ykxVK8yL5L
+Source: pikpak-webdav-v0.0.3.-unknown-linux-musl.tar.gz
+License: MIT
+URL: https://github.com/ykxVK8yL5L/pikpak-webdav
+Type: ipkg
+Description: WebDAV server for Pikpak.
+@@
+
+

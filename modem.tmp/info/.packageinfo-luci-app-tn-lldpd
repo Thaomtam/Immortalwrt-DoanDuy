@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-tn-lldpd/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-tn-lldpd
+Submenu: 3. Applications
+Version: x
+Depends: +libc +lldpd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for LLDP daemon
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: LuCI support for LLDP daemon
+@@
+
+Package: luci-i18n-tn-lldpd-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc luci-app-tn-lldpd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-tn-lldpd - ru translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-tn-lldpd - Русский (Russian)
+@@
+
+

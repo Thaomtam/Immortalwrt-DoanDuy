@@ -1,0 +1,39 @@
+Source-Makefile: feeds/modem/openwrt-einat-ebpf/Makefile
+Build-Depends: rust/host
+
+Package: einat-ebpf
+Submenu: Routing and Redirection
+Version: 0.1.2-r5
+Depends: +libc @(aarch64||arm||i386||i686||mips||mipsel||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) @HAS_BPF_TOOLCHAIN +libelf +zlib +kmod-sched-core +kmod-sched-bpf +@KERNEL_DEBUG_FS +@KERNEL_DEBUG_INFO_BTF
+Conflicts: 
+Menu-Depends: 
+Provides: einat
+Section: net
+Category: Network
+Repository: base
+Title: eBPF-based Endpoint-Independent NAT
+Maintainer: Anya Lin <hukk1996@gmail.com>
+Require-User: einat:einat
+Source: einat-ebpf-0.1.2.tar.gz
+License: GPL-2.0-or-later GPL-2.0-only
+LicenseFiles: LICENSE
+URL: https://github.com/EHfive/einat-ebpf
+Type: ipkg
+Description:   This eBPF application implements an "Endpoint-Independent Mapping" and
+  "Endpoint-Independent Filtering" NAT(network address translation) on
+  TC egress and ingress hooks.
+@@
+Config:
+	menu "Features configuration"
+		depends on PACKAGE_einat-ebpf
+
+		config EINAT_EBPF_IPV6
+			bool "Enable IPV6 NAT66 feature"
+			default n
+			help
+			  It would increase load time of eBPF programs to
+			  about 4 times.
+	endmenu
+@@
+
+

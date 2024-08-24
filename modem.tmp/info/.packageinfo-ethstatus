@@ -1,0 +1,26 @@
+Source-Makefile: feeds/modem/ethstatus/Makefile
+
+Package: ethstatus
+Version: 0.4.9-r1
+Depends: +libc +libncurses
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: console-based ethernet statistics monitor
+Maintainer: Paul Spooren <mail@aparcar.org>
+Source: ethstatus_0.4.9.tar.xz
+License: GPL-2.0-only
+LicenseFiles: COPYING
+URL: https://packages.debian.org/unstable/ethstatus
+Type: ipkg
+Description: Ethstatus is a console-based monitoring utility for
+displaying statistical data of the ethernet interface
+on a quantity basis. It is similar to iptraf but is meant
+to run as a permanent console task to monitor the network
+load.
+@@
+
+

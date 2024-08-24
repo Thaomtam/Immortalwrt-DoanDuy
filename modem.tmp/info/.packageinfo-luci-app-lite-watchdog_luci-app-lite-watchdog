@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-lite-watchdog/luci-app-lite-watchdog/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-lite-watchdog
+Submenu: 3. Applications
+Version: 1.0.15-20240102-1
+Depends: +libc +sms-tool +kmod-usb-serial +kmod-usb-serial-option +comgt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI JS Support for lite-watchdog the connection monitor
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description:    LuCI JS interface for the lite-watchdog scripts.
+@@
+
+Package: luci-i18n-lite-watchdog-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc luci-app-lite-watchdog
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-lite-watchdog - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-lite-watchdog - Polski (Polish)
+@@
+
+

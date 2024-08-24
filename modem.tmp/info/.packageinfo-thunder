@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/thunder/Makefile
+
+Package: thunder
+Submenu: Web Servers/Proxies
+Version: 1.0.3-r1
+Depends: +libc @(aarch64||x86_64) +USE_GLIBC:libpthread +libgcc +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: thunder
+Maintainer: gngpp <gngppz@gmail.com>
+Source: thunder-1.0.3--unknown-linux-musl.tar.gz
+License: MIT
+URL: https://nas.xunlei.com/
+Type: ipkg
+Description:   Synology Nas Thunder runs on OpenWrt
+@@
+
+

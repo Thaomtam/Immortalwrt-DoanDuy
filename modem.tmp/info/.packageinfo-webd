@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/webd/Makefile
+
+Package: webd
+Version: 20240223-r4
+Depends: +libc @(arm||x86_64||mipsel||mips||aarch64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A Lightweight self-hosted netdisk application
+Maintainer: 
+Source: webd-20240223--openwrt-linux-.tar.gz
+URL: https://webd.cf
+Type: ipkg
+Description: A Lightweight self-hosted netdisk application
+@@
+
+

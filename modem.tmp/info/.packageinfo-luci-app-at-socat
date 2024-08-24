@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-at-socat/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-at-socat
+Submenu: 3. Applications
+Version: x
+Depends: +libc +socat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI JS Support for sending at commands using socat
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description:    LuCI JS interface for sending at commands using socat.
+@@
+
+Package: luci-i18n-at-socat-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc luci-app-at-socat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-at-socat - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-at-socat - Polski (Polish)
+@@
+
+

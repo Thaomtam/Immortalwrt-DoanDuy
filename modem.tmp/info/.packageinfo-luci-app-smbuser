@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-smbuser/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-smbuser
+Submenu: 3. Applications
+Version: x
+Depends: +libc +samba4-server +shadow-utils +shadow-useradd +shadow-groupadd +shadow-userdel +shadow-groupdel +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Samba4 Users Management
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: LuCI support for Samba4 Users Management
+@@
+
+Package: luci-i18n-smbuser-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-smbuser
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-smbuser - zh-cn translation
+Maintainer: sbwml <admin@cooluc.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-smbuser - 简体中文 (Chinese Simplified)
+@@
+
+

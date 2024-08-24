@@ -1,0 +1,24 @@
+Source-Makefile: feeds/modem/homebox/Makefile
+Build-Depends: golang/host homebox/host
+Build-Types: host
+
+Package: homebox
+Menu: 1
+Submenu: Web Servers/Proxies
+Version: 0.0.0-dev.2020062901-r16
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A Toolbox for Home Local Networks
+Maintainer: 
+Source: homebox-0.0.0-dev.2020062901.tar.gz
+URL: https://github.com/XGHeaven/homebox
+Type: ipkg
+Description:   A Toolbox for Home Local Networks Speed Test
+@@
+
+

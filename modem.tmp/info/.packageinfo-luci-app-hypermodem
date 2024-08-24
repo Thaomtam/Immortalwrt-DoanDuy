@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-hypermodem/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-hypermodem
+Submenu: 3. Applications
+Version: x
+Depends: +libc +luci-compat +kmod-usb-net +kmod-usb-net-cdc-ether +kmod-usb-acm +kmod-usb-net-qmi-wwan +kmod-usb-net-rndis +kmod-usb-serial-qualcomm +kmod-usb-net-sierrawireless +kmod-usb-ohci +kmod-usb-serial +kmod-usb-serial-option +kmod-usb-wdm +kmod-usb2 +kmod-usb3 +kmod-usb-net-cdc-mbim +usbutils +kmod-qmi_wwan_q +kmod-pcie_mhi +pciutils +quectel-CM-5G +grep +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Hyper Modem Server
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: Hyper Modem Server
+@@
+
+Package: luci-i18n-hypermodem-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-hypermodem
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-hypermodem - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-hypermodem - 简体中文 (Chinese Simplified)
+@@
+
+

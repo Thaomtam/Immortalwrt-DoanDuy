@@ -1,0 +1,23 @@
+Source-Makefile: feeds/modem/netatalk/Makefile
+Build-Depends: libevent2
+
+Package: netatalk
+Submenu: Filesystem
+Version: 3.1.12-r4
+Depends: +libc +libattr +libdb47 +libgcrypt +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: netatalk
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: netatalk-3.1.12.tar.bz2
+CPE-ID: cpe:/a:netatalk:netatalk
+URL: http://netatalk.sourceforge.net
+Type: ipkg
+Description: netatalk
+@@
+
+

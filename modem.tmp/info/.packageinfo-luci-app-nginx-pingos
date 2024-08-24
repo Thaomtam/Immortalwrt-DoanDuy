@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/luci-app-nginx-pingos/Makefile
+
+Package: luci-app-nginx-pingos
+Submenu: 3. Applications
+Version: 1.19.6-r22
+Depends: +libc +libpcre +libopenssl +zlib +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI
+Repository: base
+Title: PingOS server
+Maintainer: 
+Source: nginx-1.19.6.tar.gz
+URL: https://pingos.io/
+Type: ipkg
+Description: PingOS server
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: feeds/modem/my-default-settings/Makefile
+
+Package: my-default-settings
+Version: 1-r263
+Depends: +libc +luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Default Settings
+Maintainer: Kiddin'
+Source: 
+Type: ipkg
+Description: Default Settings
+@@
+
+

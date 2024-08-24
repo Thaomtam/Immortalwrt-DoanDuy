@@ -1,0 +1,19 @@
+Source-Makefile: feeds/modem/quectel_SRPD_PCIE/Makefile
+
+Package: kmod-sprd_pcie
+Submenu: WWAN Support
+Version: <LINUX_VERSION>.1.6-r3
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel pcie driver for SPRD device
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Kernel module for register a custom pcispd platform device.
+@@
+
+

@@ -1,0 +1,42 @@
+Source-Makefile: feeds/modem/luci-app-cpe/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-cpe
+Submenu: 3. Applications
+Version: x
+Depends: +libc +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI luci-app-cpe app
+Maintainer: OpenWrt LuCI community
+Source: 
+License: GPLv3
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: LuCI luci-app-cpe app
+@@
+
+Package: luci-i18n-cpe-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-cpe
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-cpe - zh-cn translation
+Maintainer: 
+Source: 
+License: GPLv3
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cpe - 简体中文 (Chinese Simplified)
+@@
+
+

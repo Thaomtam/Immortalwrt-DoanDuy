@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/luci-mod-listening-ports/Makefile
+
+Package: luci-mod-listening-ports
+Submenu: 3. Applications
+Version: 1.0-r3
+Depends: +libc +luci-base +bash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Server Listening Ports
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: 	Shows Server Listening Ports for LuCI 
+@@
+
+

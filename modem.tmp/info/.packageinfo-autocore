@@ -1,0 +1,18 @@
+Source-Makefile: feeds/modem/autocore/Makefile
+
+Package: autocore
+Version: 88
+Depends: +libc @(aarch64||arm||i386||i686||x86_64) +TARGET_bcm27xx:bcm27xx-utils +TARGET_bcm53xx:nvram +TARGET_x86:ethtool +TARGET_x86:lm-sensors
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: auto core loadbalance script.
+Maintainer: 
+Source: 
+Type: ipkg
+Description: auto core loadbalance script.
+@@
+
+

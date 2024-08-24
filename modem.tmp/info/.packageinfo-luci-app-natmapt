@@ -1,0 +1,365 @@
+Source-Makefile: feeds/modem/luci-app-natmapt/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-natmapt
+Submenu: 3. Applications
+Version: x
+Depends: +libc +natmapt +coreutils-timeout
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for natmap
+Maintainer: OpenWrt LuCI community
+Source: 
+License: Apache-2.0
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description:    TCP/UDP port mapping for full cone NAT
+@@
+
+Package: luci-i18n-natmapt-cs
+Default: LUCI_LANG_cs||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - cs translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Čeština (Czech)
+@@
+
+Package: luci-i18n-natmapt-da
+Default: LUCI_LANG_da||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - da translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Dansk (Danish)
+@@
+
+Package: luci-i18n-natmapt-de
+Default: LUCI_LANG_de||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - de translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Deutsch (German)
+@@
+
+Package: luci-i18n-natmapt-es
+Default: LUCI_LANG_es||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - es translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Español (Spanish)
+@@
+
+Package: luci-i18n-natmapt-fr
+Default: LUCI_LANG_fr||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - fr translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Français (French)
+@@
+
+Package: luci-i18n-natmapt-it
+Default: LUCI_LANG_it||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - it translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Italiano (Italian)
+@@
+
+Package: luci-i18n-natmapt-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - lt translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Lietuvių (Lithuanian)
+@@
+
+Package: luci-i18n-natmapt-nl
+Default: LUCI_LANG_nl||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - nl translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Nederlands (Dutch)
+@@
+
+Package: luci-i18n-natmapt-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - pl translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Polski (Polish)
+@@
+
+Package: luci-i18n-natmapt-pt
+Default: LUCI_LANG_pt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - pt translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Português (Portuguese)
+@@
+
+Package: luci-i18n-natmapt-pt-br
+Default: LUCI_LANG_pt_BR||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - pt-br translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Português do Brasil (Brazilian Portuguese)
+@@
+
+Package: luci-i18n-natmapt-ro
+Default: LUCI_LANG_ro||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - ro translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Română (Romanian)
+@@
+
+Package: luci-i18n-natmapt-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - ru translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Русский (Russian)
+@@
+
+Package: luci-i18n-natmapt-sv
+Default: LUCI_LANG_sv||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - sv translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Svenska (Swedish)
+@@
+
+Package: luci-i18n-natmapt-tr
+Default: LUCI_LANG_tr||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - tr translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Türkçe (Turkish)
+@@
+
+Package: luci-i18n-natmapt-vi
+Default: LUCI_LANG_vi||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - vi translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - Tiếng Việt (Vietnamese)
+@@
+
+Package: luci-i18n-natmapt-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - zh-cn translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - 简体中文 (Chinese Simplified)
+@@
+
+Package: luci-i18n-natmapt-zh-tw
+Default: LUCI_LANG_zh_Hant||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmapt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmapt - zh-tw translation
+Maintainer: Anya Lin <hukk1996@gmail.com>, Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmapt - 繁體中文 (Chinese Traditional)
+@@
+
+

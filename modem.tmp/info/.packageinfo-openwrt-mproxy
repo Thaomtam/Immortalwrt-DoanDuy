@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/openwrt-mproxy/Makefile
+
+Package: mproxy
+Version: 1.0.1-r1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: mproxy for OpenWRT
+Maintainer: lean
+Source: mproxy.1.0.1.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	mproxy is a Tiny Proxy in C.
+@@
+
+

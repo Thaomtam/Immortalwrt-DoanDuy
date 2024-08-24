@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/vlmcsd/Makefile
+
+Package: vlmcsd
+Version: svn1113-r19
+Depends: +libc +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: vlmcsd for OpenWRT
+Maintainer: fuyumi <280604399@qq.com>
+Source: vlmcsd-svn1113.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+URL: http://forums.mydigitallife.info/threads/50234
+Type: ipkg
+Description:   vlmcsd is a KMS Emulator in C.
+@@
+
+

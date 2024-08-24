@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/luci-app-broadbandacc/Makefile
+
+Package: luci-app-broadbandacc
+Submenu: 3. Applications
+Version: 3.8-r17
+Depends: +libc +luci-compat +jshn +wget
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: broadband accelerate
+Maintainer: Diciya <484154383@qq.com>
+Source: luci-app-broadbandacc.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Broadband uplink and downlink acceleration functions.
+@@
+
+

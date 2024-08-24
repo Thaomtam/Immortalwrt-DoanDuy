@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/luci-app-qos-emong/Makefile
+
+Package: luci-app-qos-emong
+Submenu: 3. Applications
+Version: 1.4-r1
+Depends: +libc +tc +iptables-mod-conntrack-extra +iptables-mod-filter +iptables-mod-ipopt +iptables-mod-nat-extra +kmod-sched +iptables-mod-iprange +iptables-mod-hashlimit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for qos-emong
+Maintainer: Jeroen Louwes <jeroen.louwes@gmail.com>
+Source: 
+URL: http://
+Type: ipkg
+Description: luci app for qos-emong
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-nvr/Makefile
+
+Package: luci-app-nvr
+Submenu: 3. Applications
+Version: 20230818-r1
+Depends: +libc +ffmpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for Network Video Recorder
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI Support for Network Video Recorder
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: feeds/modem/wifidog-wiwiz/Makefile
+
+Package: wifidog-wiwiz
+Menu: 1
+Submenu: Portal
+Version: 20130917
+Depends: +libc +luci-app-eqos +dcc2-wiwiz-nossl +iptables-mod-extra +iptables-mod-ipopt +iptables-mod-nat-extra +libpthread +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Wiwiz/PinPinWiFi
+Repository: base
+Title: wifidog-wiwiz
+Maintainer: 
+Source: 
+URL: http://www.wiwiz.com
+Type: ipkg
+Description: 	Wifidog modified by Wiwiz.com
+@@
+Config:
+	source "feeds/modem/wifidog-wiwiz/Config.in"
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-nettask/Makefile
+
+Package: luci-app-nettask
+Submenu: 3. Applications
+Version: 1.5.2-r1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: file transfer tool
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Edit the shell script in the web.
+@@
+
+

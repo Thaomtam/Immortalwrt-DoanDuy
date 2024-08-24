@@ -1,0 +1,23 @@
+Source-Makefile: feeds/modem/luci-app-tinyfecvpn/Makefile
+Build-Depends: luci
+
+Package: luci-app-tinyfecvpn
+Submenu: 3. Applications
+Version: 1.0.0-r1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for tinyFecVPN
+Maintainer: Tiou <dourokinga@gmail.com>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for tinyFecVPN.
+@@
+
+

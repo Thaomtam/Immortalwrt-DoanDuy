@@ -1,0 +1,76 @@
+Source-Makefile: feeds/modem/mmdvm-luci/Makefile
+
+Package: mmdvm-luci
+Version: 1.2.0-r5
+Depends: +libc +mmdvm-host +libmmdvm +libubus-lua +libubox-lua +luci-compat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: mmdvm
+Category: MMDVM
+Repository: base
+Title: MMDVM's LuCI plugins.
+Maintainer: Michael BD7MQB <bd7mqb@qq.com>
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: MMDVM's LuCI plugins.
+@@
+Config:
+	config LUCI_APP_MMDVM
+	bool "luci-app-mmdvm"
+	depends on PACKAGE_mmdvm-luci
+	default y
+	help
+	  "LuCI plugin to configurate MMDVM Radio"
+	
+	config LUCI_THEME_BOOTSTRAP_MMDVM
+	bool "luci-theme-bootstrap-mmdvm"
+	depends on PACKAGE_mmdvm-luci
+	default y
+	help
+	  "LuCI bootstrap mod theme for MMDVM"
+
+	config LUCI_SRCDIET
+	bool "Minify Lua sources"
+	depends on PACKAGE_mmdvm-luci
+	default y
+	help
+	  "Minify Lua sources"
+
+	config LUCI_JSMIN
+	bool "Minify JavaScript sources"
+	depends on PACKAGE_mmdvm-luci
+	default y
+
+   	config LUCI_CSSTIDY
+	bool "Minify CSS files"
+	depends on PACKAGE_mmdvm-luci
+	default y
+
+	menu "Translations"
+    config LUCI_LANG_zh-cn
+	  tristate "Chinese (zh-cn)"
+  endmenu
+@@
+
+Package: mmdvm-luci-i18n-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.2.0-r5
+Depends: +libc +mmdvm-luci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: MMDVM
+Repository: base
+Title: mmdvm-luci - zh-cn translation
+Maintainer: Michael BD7MQB <bd7mqb@qq.com>
+Source: 
+License: GPL-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for mmdvm-luci - 中文 (Chinese)
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/my-dnshelper/Makefile
+
+Package: my-dnshelper
+Version: 1.1-r5
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: my-dnshelper
+Maintainer: kongfl888 <kongfl888@outlook.com>
+Source: 
+License: GPLv2
+URL: https://github.com/kongfl888/openwrt-my-dnshelper
+Type: ipkg
+Description: 	my-dnshelper which is your helper of setting dns server of your openwrt.
+@@
+
+

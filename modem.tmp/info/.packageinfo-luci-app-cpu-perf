@@ -1,0 +1,61 @@
+Source-Makefile: feeds/modem/luci-app-cpu-perf/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-cpu-perf
+Submenu: 3. Applications
+Version: x
+Depends: +libc +lua +luci-lib-nixio +luci-lib-jsonc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: CPU performance information and management for LuCI
+Maintainer: OpenWrt LuCI community
+Source: 
+License: MIT
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: CPU performance information and management for LuCI
+@@
+
+Package: luci-i18n-cpu-perf-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc luci-app-cpu-perf
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-cpu-perf - ru translation
+Maintainer: 
+Source: 
+License: MIT
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cpu-perf - Русский (Russian)
+@@
+
+Package: luci-i18n-cpu-perf-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-cpu-perf
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-cpu-perf - zh-cn translation
+Maintainer: 
+Source: 
+License: MIT
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cpu-perf - 简体中文 (Chinese Simplified)
+@@
+
+

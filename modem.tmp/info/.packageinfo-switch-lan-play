@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/switch-lan-play/Makefile
+
+Package: switch-lan-play
+Submenu: Lan-play
+Version: 0.2.3-r3
+Depends: +libc +libpcap +libpthread +libstdcpp +libatomic @!USE_UCLIBC
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Switch Lan Play Client
+Maintainer: 
+Source: switch-lan-play-0.2.3.tar.zst
+License: GPLv3
+LicenseFiles: LICENSE.TXT
+Type: ipkg
+Description:   Make you and your friends play games like in a LAN.
+@@
+
+

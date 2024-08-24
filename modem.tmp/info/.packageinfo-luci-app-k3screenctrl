@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/luci-app-k3screenctrl/Makefile
+
+Package: luci-app-k3screenctrl
+Submenu: 3. Applications
+Version: 1.1.0-r23
+Depends: +libc +k3screenctrl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for k3screenctrl
+Maintainer: Hill <lufanzhong@gmail.com>
+Source: 
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI Support for k3screenctrl.
+@@
+
+

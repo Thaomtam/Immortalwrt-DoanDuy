@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/dapnet-gateway/Makefile
+
+Package: dapnet-gateway
+Version: 1.3.0-r3
+Depends: +libc +libpthread +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: MMDVM
+Repository: base
+Title: DAPNET Gateway for MMDVM
+Maintainer: Michael BD7MQB <bd7mqb@qq.com>
+Source: dapnet-gateway-1.3.0.tar.bz2
+License: GPL-2.0
+URL: https://github.com/g4klx/DAPNETGateway
+Type: ipkg
+Description: Gateway to the DAPNET POCSAG network
+@@
+
+

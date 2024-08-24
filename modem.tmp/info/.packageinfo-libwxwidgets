@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/libwxwidgets/Makefile
+
+Package: libwxwidgets
+Version: 3.0-r4
+Depends: +libc +libexpat +libstdcpp +zlib +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lib
+Category: MMDVM
+Repository: base
+Title: Cross-Platform GUI Library
+Maintainer: Michael BD7MQB <bd7mqb@qq.com>
+Source: libwxwidgets-3.0.tar.bz2
+License: GPL-2.0
+URL: https://www.wxwidgets.org
+Type: ipkg
+Description: Cross-Platform GUI Library
+@@
+
+

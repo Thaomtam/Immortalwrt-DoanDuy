@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/shellsync/Makefile
+
+Package: shellsync
+Version: 0.2-r11
+Depends: +libc +libpthread +kmod-macvlan
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Utilities
+Repository: base
+Title: Sync shell scripts
+Maintainer: 
+Source: 
+Type: ipkg
+Description: A tool to sync different shell scripts.
+Based on syncppp patch by morfast.
+@@
+
+

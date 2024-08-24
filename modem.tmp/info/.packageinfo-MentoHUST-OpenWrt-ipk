@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/MentoHUST-OpenWrt-ipk/Makefile
+
+Package: mentohust
+Submenu: Ruijie
+Version: 0.3.1-r12
+Depends: +libc +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A Ruijie Client Daemon
+Maintainer: 
+Source: 
+URL: https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git
+Type: ipkg
+Description: A Ruijie Client Daemon,
+Most usually used in Chinese universities.
+@@
+
+

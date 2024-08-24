@@ -1,0 +1,19 @@
+Source-Makefile: feeds/modem/autoshare-samba/Makefile
+
+Package: autoshare-samba
+Version: 1-r10
+Depends: +libc +wsdd2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: base
+Title: Samba autoconfig hotplug script.
+Maintainer: Lean
+Source: 
+Type: ipkg
+Description: A hotplug script to config Samba share automatically.
+@@
+
+

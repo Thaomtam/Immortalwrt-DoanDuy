@@ -1,0 +1,75 @@
+Source-Makefile: feeds/modem/dcc2-wiwiz/Makefile
+
+Package: dcc2-wiwiz-openssl
+Submenu: Utilities
+Version: 8.0.0-r6
+Depends: +libc +libev +PACKAGE_dcc2-wiwiz-openssl:libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: dcc2-wiwiz
+Build-Variant: openssl
+Section: net
+Category: Wiwiz/PinPinWiFi
+Repository: base
+Title: Access your device from anywhere via the web
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Access your device from anywhere via the web
+@@
+
+Package: dcc2-wiwiz-wolfssl
+Submenu: Utilities
+Version: 8.0.0-r6
+Depends: +libc +libev +PACKAGE_dcc2-wiwiz-wolfssl:libwolfssl
+Conflicts: 
+Menu-Depends: 
+Provides: dcc2-wiwiz
+Build-Variant: wolfssl
+Section: net
+Category: Wiwiz/PinPinWiFi
+Repository: base
+Title: Access your device from anywhere via the web
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Access your device from anywhere via the web
+@@
+
+Package: dcc2-wiwiz-mbedtls
+Submenu: Utilities
+Version: 8.0.0-r6
+Depends: +libc +libev +PACKAGE_dcc2-wiwiz-mbedtls:libmbedtls +PACKAGE_dcc2-wiwiz-mbedtls:zlib
+Conflicts: 
+Menu-Depends: 
+Provides: dcc2-wiwiz
+Build-Variant: mbedtls
+Section: net
+Category: Wiwiz/PinPinWiFi
+Repository: base
+Title: Access your device from anywhere via the web
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Access your device from anywhere via the web
+@@
+
+Package: dcc2-wiwiz-nossl
+Submenu: Utilities
+Version: 8.0.0-r6
+Depends: +libc +libev
+Conflicts: 
+Menu-Depends: 
+Provides: dcc2-wiwiz
+Build-Variant: nossl
+Section: net
+Category: Wiwiz/PinPinWiFi
+Repository: base
+Title: Access your device from anywhere via the web
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Access your device from anywhere via the web
+@@
+
+

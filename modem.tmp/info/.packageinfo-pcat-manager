@@ -1,0 +1,23 @@
+Source-Makefile: feeds/modem/pcat-manager/Makefile
+
+Package: pcat-manager
+Version: 2023.03.17~0149b4780866648d53a2a8633ecf7bc23f1937e5-r11
+Depends: +libc +glib2 +libgpiod +libjson-c +libusb-1.0
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: photonicat watchdog
+Maintainer: 
+Source: pcat-manager-2023.03.17~0149b4780866648d53a2a8633ecf7bc23f1937e5.tar.zst
+License: GPL-3.0
+LicenseFiles: LICENSE
+URL: https://photonicat.com
+Type: ipkg
+Description:   Photonicat Manager is a system service for
+  power management and modem controlling.
+@@
+
+

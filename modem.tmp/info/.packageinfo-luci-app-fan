@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-fan/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-fan
+Submenu: 3. Applications
+Version: x
+Depends: +libc +coreutils-stat +kmod-hwmon-pwmfan +kmod-thermal +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI fan control
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: LuCI fan control
+@@
+
+Package: luci-i18n-fan-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-fan
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-fan - zh-cn translation
+Maintainer: jjm2473 <jjm2473@gmail.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-fan - 简体中文 (Chinese Simplified)
+@@
+
+

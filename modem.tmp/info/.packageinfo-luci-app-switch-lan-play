@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-switch-lan-play/Makefile
+
+Package: luci-app-switch-lan-play
+Submenu: 3. Applications
+Version: 0.0.3-r1
+Depends: +libc +switch-lan-play
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-switch-lan-play
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	 LuCI web-interface for Switch Lan Play Client
+@@
+
+

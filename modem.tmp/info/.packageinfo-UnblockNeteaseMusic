@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/UnblockNeteaseMusic/Makefile
+
+Package: UnblockNeteaseMusic
+Version: 0.27.0-2022-10-09-0c50e8c6ba159efd586595b8a9d1308cde94d4cc-r308
+Depends: +libc +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: base
+Title: Revive Netease Cloud Music (NodeJS)
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: UnblockNeteaseMusic-0.27.0-2022-10-09-0c50e8c6ba159efd586595b8a9d1308cde94d4cc.tar.zst
+License: LGPL-3.0-only
+URL: https://github.com/nondanee/UnblockNeteaseMusic
+Type: ipkg
+Description: Revive Netease Cloud Music (NodeJS)
+@@
+
+

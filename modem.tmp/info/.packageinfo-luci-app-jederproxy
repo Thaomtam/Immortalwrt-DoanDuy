@@ -1,0 +1,28 @@
+Source-Makefile: feeds/modem/luci-app-jederproxy/Makefile
+
+Package: luci-app-jederproxy
+Version: 1.0.0-r1
+Depends: +libc +luci-base +dnsmasq +ca-bundle +PACKAGE_firewall4:kmod-nft-tproxy +PACKAGE_firewall4:ucode-mod-resolv +PACKAGE_firewall:ipset +PACKAGE_firewall:iptables +PACKAGE_firewall:iptables-mod-conntrack-extra +PACKAGE_firewall:iptables-mod-extra +PACKAGE_firewall:iptables-mod-tproxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Custom
+Category: Extra packages
+Repository: base
+Title: LuCI Support for jeder(every) proxies
+Maintainer: ttimasdf <opensource@rabit.pw>
+Require-User: jederproxy=346:jederproxy=346
+Source: 
+License: MPLv2
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	LuCI interface for multiple proxy backends, supporting clash/clash meta, xray/v2ray, shadowsocks (ss-redir).
+@@
+Config:
+menu "luci-app-jederproxy Configuration"
+	depends on PACKAGE_luci-app-jederproxy
+
+endmenu
+@@
+
+

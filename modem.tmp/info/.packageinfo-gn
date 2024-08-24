@@ -1,0 +1,25 @@
+Source-Makefile: feeds/modem/gn/Makefile
+Build-Types: host
+
+Package: gn
+Version: 2024.08.13~54f5b539df8c4e460b18c62a11132d77b5601136-r30
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Repository: base
+Title: A meta-build system that generates build files for Ninja
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: gn-2024.08.13~54f5b539df8c4e460b18c62a11132d77b5601136.tar.zst
+License: BSD 3-Clause
+LicenseFiles: LICENSE
+URL: https://gn.googlesource.com/gn/
+Type: ipkg
+Build-Only: 1
+Description:   GN can generate Ninja build files for C, C++, Rust, Objective C,
+  and Swift source on most popular platforms.
+@@
+
+

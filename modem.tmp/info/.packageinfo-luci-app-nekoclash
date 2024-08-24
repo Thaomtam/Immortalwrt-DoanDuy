@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-nekoclash/Makefile
+
+Package: luci-app-nekoclash
+Submenu: 3. Applications
+Version: 1.1.35-beta-r3
+Depends: +libc +kmod-tun +bash +curl +jq +php8 +php8-cgi +php8-mod-curl +firewall4 +nftables
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI
+Repository: base
+Title: LuCI support for mihomo
+Maintainer: Thaolga <https://github.com/Thaolga/luci-app-nekoclash>
+Source: 
+Type: ipkg
+Description:     A LuCI support for mihomo
+@@
+
+

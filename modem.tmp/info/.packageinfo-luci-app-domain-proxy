@@ -1,0 +1,23 @@
+Source-Makefile: feeds/modem/luci-app-domain-proxy/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-domain-proxy
+Submenu: 3. Applications
+Version: x
+Depends: +libc +luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Domain Proxy for redsocks.
+Maintainer: OpenWrt LuCI community
+Source: 
+License: GPLv3
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description:    Domain Proxy for redsocks.
+@@
+
+

@@ -1,0 +1,61 @@
+Source-Makefile: feeds/modem/luci-app-disks-info/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-disks-info
+Submenu: 3. Applications
+Version: x
+Depends: +libc +fdisk +smartmontools +smartmontools-drivedb
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Information about connected disk devices (partitions, filesystems, SMART).
+Maintainer: OpenWrt LuCI community
+Source: 
+License: MIT
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: Information about connected disk devices (partitions, filesystems, SMART).
+@@
+
+Package: luci-i18n-disks-info-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc luci-app-disks-info
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-disks-info - ru translation
+Maintainer: 
+Source: 
+License: MIT
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-disks-info - Русский (Russian)
+@@
+
+Package: luci-i18n-disks-info-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-disks-info
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-disks-info - zh-cn translation
+Maintainer: 
+Source: 
+License: MIT
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-disks-info - 简体中文 (Chinese Simplified)
+@@
+
+

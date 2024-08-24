@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-cqustdotnet/luci-app-cqustdotnet/Makefile
+
+Package: luci-app-cqustdotnet
+Submenu: 3. Applications
+Version: 1.1.10-rbeta
+Depends: +libc +bash +curl +lua +libuci-lua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI
+Repository: base
+Title: A LuCI app to simply connect to network of CQUST
+Maintainer: Hurring
+Source: 
+Type: ipkg
+Description: 	A LuCI app to simply connect to network of CQUST
+@@
+
+

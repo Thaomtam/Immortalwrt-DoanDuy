@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/openwrt-rgmac/Makefile
+
+Package: rgmac
+Version: 1.5.1-r2
+Depends: +libc +bash +curl +coreutils-cksum +getopt
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A random MAC address generator
+Maintainer: muink <hukk1996@gmail.com>
+Source: rgmac-1.5.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+URL: https://github.com/muink/rgmac
+Type: ipkg
+Description: A random MAC address generator
+@@
+
+

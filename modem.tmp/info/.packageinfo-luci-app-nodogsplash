@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/luci-app-nodogsplash/Makefile
+
+Package: luci-app-nodogsplash
+Submenu: 3. Applications
+Version: 2.0.1-r4
+Depends: +libc +nodogsplash +luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for NoDogSplash
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: 	LuCI Support for NoDogSplash
+@@
+
+

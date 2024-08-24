@@ -1,0 +1,19 @@
+Source-Makefile: feeds/modem/quectel_MHI/Makefile
+
+Package: kmod-pcie_mhi
+Submenu: WWAN Support
+Version: <LINUX_VERSION>.1.3.6-r4
+Depends: +pciids +pciutils +quectel-CM-5G
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel pcie driver for MHI device
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Kernel module for register a custom pciemhi platform device.
+@@
+
+

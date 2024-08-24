@@ -1,0 +1,42 @@
+Source-Makefile: feeds/modem/luci-app-rtorrent/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-rtorrent
+Submenu: 3. Applications
+Version: x
+Depends: +libc +rtorrent-rpc +luaexpat +luasocket +luasec +screen +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: rTorrent LuCI web interface
+Maintainer: OpenWrt LuCI community
+Source: 
+License: GPLv3
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: rTorrent LuCI web interface
+@@
+
+Package: luci-i18n-rtorrent-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc luci-app-rtorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rtorrent - ru translation
+Maintainer: 
+Source: 
+License: GPLv3
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rtorrent - Русский (Russian)
+@@
+
+

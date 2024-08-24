@@ -1,0 +1,19 @@
+Source-Makefile: feeds/modem/quectel_Gobinet/Makefile
+
+Package: kmod-gobinet
+Submenu: WWAN Support
+Version: <LINUX_VERSION>.1.6.3-r5
+Depends: +kmod-usb-net
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Quectel Linux USB Gobinet Driver
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Quectel Linux USB gobinet Driver
+@@
+
+

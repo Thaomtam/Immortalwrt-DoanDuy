@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-banmac-ipt/Makefile
+
+Package: luci-app-banmac-ipt
+Submenu: 3. Applications
+Version: 20211118-r1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for Ban Client
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI Support for Ban Client
+@@
+
+

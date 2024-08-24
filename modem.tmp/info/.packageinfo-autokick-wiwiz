@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/autokick-wiwiz/Makefile
+
+Package: autokick-wiwiz
+Submenu: Portal
+Version: 1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Wiwiz/PinPinWiFi
+Repository: base
+Title: Disconnects wireless user when the user is authenticated and expired via Portal
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Disconnects wireless user when the user is authenticated and expired via Portal
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/k3screenctrl/Makefile
+
+Package: k3screenctrl
+Version: 0.10-2-r24
+Depends: +libc @(TARGET_bcm53xx_generic_DEVICE_phicomm_k3||TARGET_bcm53xx_generic_DEVICE_phicomm-k3||TARGET_bcm53xx_DEVICE_phicomm-k3||TARGET_DEVICE_bcm53xx_generic_DEVICE_phicomm_k3) +@KERNEL_DEVMEM +coreutils +coreutils-od +bash +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: LCD screen controller on PHICOMM K3
+Maintainer: Hamster Tian <haotia@gmail.com>
+Source: k3screenctrl-e123c38dffba39aed6d878c9219719356e52226e.tar.xz
+URL: https://github.com/lwz322/k3screenctrl.git
+Type: ipkg
+Description:  K3 Screen Controller (k3screenctrl) is a program utilizing
+the LCD screen on PHICOMM K3 to display some stats.
+@@
+
+

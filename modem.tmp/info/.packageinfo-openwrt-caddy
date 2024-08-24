@@ -1,0 +1,24 @@
+Source-Makefile: feeds/modem/openwrt-caddy/Makefile
+Build-Depends: golang/host upx/host
+
+Package: caddy
+Submenu: Web Servers/Proxies
+Version: 2.8.4-r1
+Depends: +libc @(aarch64||arm||i386||i686||loongarch64||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Caddy is an open source web server
+Maintainer: 
+Source: caddy-2.8.4.tar.gz
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+URL: https://caddyserver.com
+Type: ipkg
+Description: Caddy is an extensible server platform that uses TLS by default.
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: feeds/modem/dsmboot/Makefile
+
+Package: dsmboot
+Version: 5.2-r8
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Synology DSM pxeboot from TFTP
+Maintainer: 
+Source: 
+Type: ipkg
+Description: DSM 5.2 boot from TFTP
+@@
+
+

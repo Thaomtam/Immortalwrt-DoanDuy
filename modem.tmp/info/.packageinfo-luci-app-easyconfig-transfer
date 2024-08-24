@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-easyconfig-transfer/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-easyconfig-transfer
+Submenu: 3. Applications
+Version: x
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI JS Support for easyconfig transfer statistics
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description:    LuCI JS interface for the easyconfig transfer statistics.
+@@
+
+Package: luci-i18n-easyconfig-transfer-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc luci-app-easyconfig-transfer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-easyconfig-transfer - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-easyconfig-transfer - Polski (Polish)
+@@
+
+

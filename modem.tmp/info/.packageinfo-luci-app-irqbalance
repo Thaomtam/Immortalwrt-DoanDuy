@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-irqbalance/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-irqbalance
+Submenu: 3. Applications
+Version: x
+Depends: +libc +irqbalance +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Luci for irqbalance
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: Luci for irqbalance
+@@
+
+Package: luci-i18n-irqbalance-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-irqbalance
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-irqbalance - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-irqbalance - 简体中文 (Chinese Simplified)
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/sendat/Makefile
+
+Package: sendat
+Submenu: CPE
+Version: 2023.10.26~624c58f6331e5be3eac6d144ed985b4a4af94b10-r2
+Depends: +libc +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Sendat AT
+Maintainer: 
+Source: sendat-2023.10.26~624c58f6331e5be3eac6d144ed985b4a4af94b10.tar.zst
+Type: ipkg
+Description:   AT Commnad for sendat test
+@@
+
+

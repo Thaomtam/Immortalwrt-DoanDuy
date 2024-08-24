@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-leigod-acc/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-leigod-acc
+Submenu: 3. Applications
+Version: x
+Depends: +libc +libpcap +iptables +kmod-ipt-nat +iptables-mod-tproxy +kmod-ipt-tproxy +kmod-tun +kmod-netem +tc-full +kmod-ipt-ipset +ipset +curl +miniupnpd +conntrack +conntrackd +leigod-acc +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Luci for Leigod Game Accelerater
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: Luci for Leigod Game Accelerater
+@@
+
+Package: luci-i18n-leigod-acc-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-leigod-acc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-leigod-acc - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-leigod-acc - 简体中文 (Chinese Simplified)
+@@
+
+

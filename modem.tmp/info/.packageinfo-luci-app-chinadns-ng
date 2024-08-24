@@ -1,0 +1,20 @@
+Source-Makefile: feeds/modem/luci-app-chinadns-ng/Makefile
+
+Package: luci-app-chinadns-ng
+Submenu: 3. Applications
+Version: 1.0-r5
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for chinadns-ng
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for chinadns-ng
+@@
+
+

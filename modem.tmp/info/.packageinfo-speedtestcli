@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/speedtestcli/Makefile
+
+Package: speedtestcli
+Submenu: Web Servers/Proxies
+Version: 1.2.0-r2
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: SpeedTestCli - network speed test
+Maintainer: 
+Source: speedtestcli-binary-1.2.0.tar.gz
+URL: https://www.speedtest.net
+Type: ipkg
+Description:   SpeedTestCli is a network speed test command
+@@
+
+

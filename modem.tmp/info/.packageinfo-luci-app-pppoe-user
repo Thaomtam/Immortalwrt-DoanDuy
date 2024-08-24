@@ -1,0 +1,40 @@
+Source-Makefile: feeds/modem/luci-app-pppoe-user/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-pppoe-user
+Submenu: 3. Applications
+Version: x
+Depends: +libc +luci-compat +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: PPPoE Server User Management
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: PPPoE Server User Management
+@@
+
+Package: luci-i18n-pppoe-user-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-pppoe-user
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-pppoe-user - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-pppoe-user - 简体中文 (Chinese Simplified)
+@@
+
+

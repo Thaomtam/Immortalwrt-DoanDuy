@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/routergo/Makefile
+
+Package: routergo
+Submenu: Web Servers/Proxies
+Version: 0.14.10-r5
+Depends: +libc @(x86_64||aarch64||arm) +docker +dockerd +luci-app-linkease
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: RouterGo
+Maintainer: 
+Source: routergo-binary-0.14.10.tar.gz
+URL: https://github.com/Carseason/openwrt-packages
+Type: ipkg
+Description:   RouterGo is a dashboard & user guide
+@@
+
+

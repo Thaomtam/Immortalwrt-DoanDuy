@@ -1,0 +1,22 @@
+Source-Makefile: feeds/modem/luci-lib-mac-vendor/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-lib-mac-vendor
+Submenu: 6. Libraries
+Version: x
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI mac to vendor map
+Maintainer: OpenWrt LuCI community
+Source: mac_vendor-v1.0.2.tar.gz
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description:    provide a js for mac address to vendor mapping
+@@
+
+

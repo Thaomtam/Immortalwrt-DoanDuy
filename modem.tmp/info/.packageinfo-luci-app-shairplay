@@ -1,0 +1,58 @@
+Source-Makefile: feeds/modem/luci-app-shairplay/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-shairplay
+Submenu: 3. Applications
+Version: x
+Depends: +libc +shairplay +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for Shairplay
+Maintainer: OpenWrt LuCI community
+Source: 
+URL: https://github.com/openwrt/luci
+Type: ipkg
+Description: LuCI Support for Shairplay
+@@
+
+Package: luci-i18n-shairplay-ja
+Default: LUCI_LANG_ja||(ALL&&m)
+Version: x
+Depends: +libc luci-app-shairplay
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-shairplay - ja translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-shairplay - 日本語 (Japanese)
+@@
+
+Package: luci-i18n-shairplay-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc luci-app-shairplay
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-shairplay - ru translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-shairplay - Русский (Russian)
+@@
+
+

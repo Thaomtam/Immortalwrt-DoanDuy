@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/luci-app-squid-adv/Makefile
+
+Package: luci-app-squid-adv
+Submenu: 3. Applications
+Version: 2.0-r13
+Depends: +libc +squid +luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Advanced LuCI support for Squid
+Maintainer: Douglas Orend <doug.orend2@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: 	LuCI Support for Squid, complete with Transparent Proxy support for both HTTP and HTTPS!
+@@
+
+

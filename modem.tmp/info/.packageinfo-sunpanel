@@ -1,0 +1,21 @@
+Source-Makefile: feeds/modem/sunpanel/Makefile
+
+Package: sunpanel
+Submenu: Web Servers/Proxies
+Version: 1.3.1-r3
+Depends: +libc @(x86_64||aarch64||arm) +ubus +uci +bash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: SunPanel, NAS navigation panel.
+Maintainer: 
+Source: sunpanel-binary-1.3.1.tar.gz
+URL: https://sun-panel-doc.enianteam.com/
+Type: ipkg
+Description:   Server, NAS navigation panel, Homepage, Browser homepage.
+@@
+
+

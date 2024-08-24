@@ -1,0 +1,23 @@
+Source-Makefile: feeds/modem/rustdesk-server/Makefile
+Build-Depends: rust/host
+
+Package: rustdesk-server
+Version: 1.1.11-1-r6
+Depends: +libc @(aarch64||arm||i386||i686||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: RustDesk Server Program
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: rustdesk-server-1.1.11-1.tar.gz
+License: AGPL-3.0-only
+LicenseFiles: LICENSE
+URL: https://rustdesk.com/server
+Type: ipkg
+Description:   Self-host your own RustDesk server, it is free and open source.
+@@
+
+
