@@ -23,6 +23,7 @@ git clone https://github.com/4IceG/luci-app-sms-tool.git
 cd /feeds/luci/themes/
 git clone https://github.com/jerrykuku/luci-theme-argon.git
 cd ../../..
+./scripts/feeds update -a && ./scripts/feeds install -a
 rm -rf feeds/packages/net/mosdns
 rm -rf feeds/packages/net/msd_lite
 rm -rf feeds/packages/net/smartdns
@@ -31,5 +32,4 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-./scripts/feeds update -a; ./scripts/feeds install -a
-
+./scripts/feeds update -a && ./scripts/feeds install -a
