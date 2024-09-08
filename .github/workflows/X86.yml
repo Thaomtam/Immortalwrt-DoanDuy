@@ -5,7 +5,7 @@
 name: X86
 on:
   schedule:
-    - cron: '0 16 * * 2'
+    - cron: '0 13 * * 2'
   release:
     types: [published]
   push:
