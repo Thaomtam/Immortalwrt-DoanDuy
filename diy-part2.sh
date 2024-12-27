@@ -27,3 +27,4 @@ rm -rf feeds/packages/net/quectel-cm
 rm -rf package/feeds/packages/quectel-cm
 rm -rf feeds/packages/kernel/fibocom-qmi-wwan/
 rm -rf feeds/packages/kernel/quectel-qmi-wwan/
+rm -rf package/feeds/modem/quectel_MHI
