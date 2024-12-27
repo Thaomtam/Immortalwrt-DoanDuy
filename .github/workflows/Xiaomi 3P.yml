@@ -81,10 +81,10 @@ jobs:
            git describe --tags $(git rev-list --tags --max-count=1) > immortalwrt_version
            git checkout -f $(git describe --tags $(git rev-list --tags --max-count=1))
            sed -i '$a src-git modem https://github.com/kiddin9/kwrt-packages.git' feeds.conf.default
-           rm -rf /root/openwrt/feeds/packages/net/quectel-cm
-           rm -rf /root/openwrt/package/feeds/packages/quectel-cm
-           rm -rf /root/openwrt/feeds/packages/kernel/fibocom-qmi-wwan/
-           rm -rf /root/openwrt/feeds/packages/kernel/quectel-qmi-wwan/
+           rm -rf feeds/packages/net/quectel-cm
+           rm -rf package/feeds/packages/quectel-cm
+           rm -rf feeds/packages/kernel/fibocom-qmi-wwan/
+           rm -rf feeds/packages/kernel/quectel-qmi-wwan/
            rm -rf feeds/packages/lang/golang
            git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
            
