@@ -1869,7 +1869,7 @@ CONFIG_PACKAGE_mtd=y
 CONFIG_PACKAGE_netifd=y
 # CONFIG_PACKAGE_nft-qos is not set
 CONFIG_PACKAGE_openwrt-keyring=y
-# CONFIG_PACKAGE_opkg is not set
+CONFIG_PACKAGE_opkg=y
 CONFIG_PACKAGE_procd=y
 
 #
@@ -5509,7 +5509,7 @@ CONFIG_PACKAGE_luci-app-package-manager=y
 # CONFIG_PACKAGE_luci-app-pagekitec is not set
 # CONFIG_PACKAGE_luci-app-parentcontrol is not set
 # CONFIG_PACKAGE_luci-app-partexp is not set
-# CONFIG_PACKAGE_luci-app-passwall is not set
+CONFIG_PACKAGE_luci-app-passwall=y
 
 #
 # Configuration
@@ -7462,8 +7462,8 @@ CONFIG_SPEEDTEST_WEB_COMPRESS_UPX=y
 # CONFIG_PACKAGE_speedtestcpp is not set
 # CONFIG_PACKAGE_spoofer is not set
 # CONFIG_PACKAGE_sscep is not set
-# CONFIG_PACKAGE_ssocks is not set
-# CONFIG_PACKAGE_ssocksd is not set
+CONFIG_PACKAGE_ssocks=y
+CONFIG_PACKAGE_ssocksd=y
 # CONFIG_PACKAGE_static-neighbor-reports is not set
 # CONFIG_PACKAGE_stunnel is not set
 # CONFIG_PACKAGE_stuntman is not set
